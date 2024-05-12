@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta property="og:url" content="https://mintsisters.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MintSisters">
+    <meta property="og:description" content="「mio3io」様制作の3Dモデル、「薄荷」ちゃんの魅力を広めるため、薄荷ちゃんユーザーによって結成された薄荷ちゃんの非公式アイドルグループです！！">
+    <meta property="og:image" content="https://mintsisters.com/assets/logo640.png">
+    <meta name="viewport" content="width=1000">
+    <title>MintSisters</title>
+    <script>
+      {
+        const query = window.location.search;
+        if (query.startsWith('?p=')) {
+          window.history.replaceState(null, null, decodeURIComponent(query.substr(3)))
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <h1><a id="/"><img src="/assets/logo160.png" alt="MintSisters" width="160" height="90"></a></h1>
+      <p><a id="/members">メンバー</a></p>
+      <p><a id="/news">ニュース</a></p>
+    </header>
+
+    <main id="root"></main>
+    <script type="module" src="/src/main.tsx"></script>
+
+    <footer>
+      <dl>
+        <dt>Twitter</dt>
+        <dd><a href="//twitter.com/Mintsisters_VRC">Mintsisters_VRC</a></dd>
+      </dl>
+      <dl>
+        <dt>VRChat Group</dt>
+        <dd><a href="//vrc.group/MSFC.8730">ミンシスファンクラブ</a></dd>
+      </dl>
+      <dl>
+        <dt>YouTube Channel</dt>
+        <dd><a href="//www.youtube.com/@MintSisters">MintSisters</a></dd>
+      </dl>
+      <img src="/assets/logo160.png" alt="MintSisters" width="160" height="90">
+    </footer>
+  </body>
+</html>
