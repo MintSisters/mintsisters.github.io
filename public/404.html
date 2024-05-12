@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>404</title>
+    <script>
+      const pathSegmentsToKeep = 0
+
+      const segments   = window.location.pathname.slice(1).split('/')
+      const repository = segments.slice(0, pathSegmentsToKeep).join()
+      const parameters = segments.slice(pathSegmentsToKeep).join('/')
+      window.location.replace(`${window.location.origin}/${repository}?p=%2F${encodeURIComponent(parameters)}`)
+    </script>
+  </head>
+  <body></body>
+</html>
